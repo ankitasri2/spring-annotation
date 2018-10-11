@@ -21,10 +21,10 @@ public class MyAppConfig {
 	public BasicDataSource getBasicDataSource() {
 		
 		BasicDataSource basicDataSource = new BasicDataSource();
-		basicDataSource.setDriverClassName("");
-		basicDataSource.setUrl("");
-		basicDataSource.setUsername("");
-		basicDataSource.setPassword("");
+		basicDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+		basicDataSource.setUrl("jdbc:mysql://127.0.0.1:3306/bank_employee");
+		basicDataSource.setUsername("explorer");
+		basicDataSource.setPassword("Connect@21");
 		
 		basicDataSource.setInitialSize(5);
 		basicDataSource.setMaxTotal(10);
